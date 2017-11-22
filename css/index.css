@@ -373,6 +373,12 @@ header {
           width: 32px;
           height: 32px; }
           #consultCenter .ccBox .ccOn ul li:nth-child(5) a img {
-            width: 100%; }
+            width: 100%;
+            transition: transform 0.4s linear;
+            -moz-transition: -moz-transform 0.4s linear;
+            -webkit-transition: -webkit-transform 0.4s linear;
+            -ms-transition: transform 0.4s linear; }
+        #consultCenter .ccBox .ccOn ul li:nth-child(5) a:hover img {
+          transform: rotate(360deg); }
 
 /*# sourceMappingURL=index.css.map */
