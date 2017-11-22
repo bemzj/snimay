@@ -1,0 +1,498 @@
+$red:#a51e32;
+$black:#333333;
+//轮播图
+#banner{
+    min-width: 1200px;
+    position: relative;
+    img{
+        width:100%;
+    }
+    .swiper-pagination-bullet{
+        width: auto;
+        height: auto;
+        padding: 18px 8px;
+        display: inline-block;
+        border-radius: 0%;
+        font-size: 12px;        
+        color: white;
+        background-color: rgba(0,0,0,0);
+        opacity: 0.8;
+        margin: 0;
+    }
+    .swiper-pagination-bullet-active{
+        border-bottom: 2px solid $red;
+    }
+}
+header{
+    position: absolute;
+}
+//业务中心
+#businessCenter{
+    width: 1200px;
+    margin: 0 auto;
+    >div{
+        width: 170px;
+        height: 158px;
+        a{
+            display: block;
+            width: 100%;
+            height: 98px;
+            margin-top: 30px;
+            border-right: 1px dashed #c8c8c8;
+            div{
+                width: 100%;
+                height: 72px;
+                background: url(../img/center1.png) no-repeat center center;
+                transition: background-image 0.5s linear;
+                -moz-transition: background-image 0.5s linear;
+                -webkit-transition: background-image 0.5s linear;
+                -ms-transition: background-image 0.5s linear;
+            }
+            p{
+                color: #666666;
+                font-size: 12px;
+                text-align: center;
+                line-height: 26px;
+                height: 26px;
+            }
+        }
+    }
+    > div:nth-child(2) a:hover{
+        div{
+            background-image: url(../img/center11.png);
+        }
+        p{
+            color: $red;
+        }
+    }
+    > div:nth-child(3) a div{
+        background-image: url(../img/center2.png);
+    }
+    > div:nth-child(3) a:hover{
+        div{
+            background-image: url(../img/center22.png);
+        }
+        p{
+            color: $red;
+        }
+    }
+    > div:nth-child(4) a div{
+        background-image: url(../img/center3.png);
+    }
+    > div:nth-child(4) a:hover{
+        div{
+            background-image: url(../img/center33.png);
+        }
+        p{
+            color: $red;
+        }
+    }
+    > div:nth-child(5) a div{
+        background-image: url(../img/center4.png);
+    }
+    > div:nth-child(5) a:hover{
+        div{
+            background-image: url(../img/center44.png);
+        }
+        p{
+            color: $red;
+        }
+    }
+    > div:nth-child(6) a div{
+        background-image: url(../img/center5.png);
+    }
+    > div:nth-child(6) a:hover{
+        div{
+            background-image: url(../img/center55.png);
+        }
+        p{
+            color: $red;
+        }
+    }
+    > div:nth-child(7) a div{
+        background-image: url(../img/center6.png);
+    }
+    > div:nth-child(7) a:hover{
+        div{
+            background-image: url(../img/center66.png);
+        }
+        p{
+            color: $red;
+        }
+    }
+    >div:nth-child(1){
+        width: 174px;
+        height: 158px;
+        background-color: #eeeeee;
+        p{
+            text-align: center;
+        }
+        p:nth-child(1){
+            color: #333333;
+            font-size: 18px;
+            line-height: 28px;
+            height: 28px;
+            margin-top: 54px;
+        }
+        p:nth-child(2){
+            color: #999999;
+            font-size: 12px;
+            line-height: 22px;
+            height: 22px;
+            font-family: arial;
+        }
+    }
+    >div:last-child{
+        height: 0;
+        width: 0;
+    }
+}
+//诗尼曼介绍
+#introduce{
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 40px;
+    .introBox{
+        width: 100%;
+        height: 450px;
+        .imgBox{           
+            >div{
+                display: block;
+                width: 100%;
+                height: 100%;
+                position: relative;
+                >a{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    background-color: rgba(0, 0, 0, 0.8);
+                    z-index: 10;
+                    img {
+                        margin: 0 auto;
+                        margin-top: 192px;
+                    }
+                    
+                    p {
+                        color: #ffffff;
+                        font-size: 16px;
+                        text-align: center;
+                        margin-top: 15px;
+                    } 
+                }
+            }
+        }
+        >div {
+            width: 600px;
+            height: 450px;
+            overflow: hidden; 
+        }       
+        >div:last-child {
+            width: 0;
+            height: 0;
+        }
+        
+        .imgAndContent {
+            .icTop {
+                width: 100%;
+                height: 244px;
+                ul {
+                    width: 446px;
+                    margin: 0 auto;
+                    li:nth-child(1) {
+                        font-size: 18px;
+                        color: #333333;
+                        line-height: 28px;
+                        padding-top: 46px;
+                    }
+                    li:nth-child(2) {
+                        font-size: 12px;
+                        color: #999999;
+                        font-family: arial;
+                        line-height: 22px;
+                    }
+                    li:nth-child(3) {
+                        p {
+                            width: 46px;
+                            border-bottom: 1px solid $red;
+                            margin: 22px 0;
+                        }
+                    }
+                    li:nth-child(4) {
+                        font-size: 12px;
+                        color: #888888;
+                        font-family: arial;
+                        line-height: 30px;
+                    }
+                }
+            }
+            .icBottom {
+                width: 100%;
+                height: 206px;
+                >div {    
+                    width: 297px;
+                    height: 200px;
+                    margin: 3px 0px 3px 3px;
+                    overflow: hidden;
+                    >div{
+                        position: relative;
+                        width: 100%;
+                        height: 100%;
+                        >a,.imgPop{
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            top: 100%;
+                            left: 0;
+                            background-color: rgba(0, 0, 0, 0.8);
+                            z-index: 10;
+                            img {
+                                margin: 0 auto;
+                                margin-top: 67px;
+                            }
+                            p {
+                                color: #ffffff;
+                                font-size: 16px;
+                                text-align: center;
+                                margin-top: 15px;
+                            } 
+                        }
+                        .imgPop {
+                            img{
+                                margin-top: 30px;
+                            }
+                            ul{
+                                margin: 0 auto;
+                            }
+                            ul li {
+                                display: inline-block;
+                                margin: 15px 5px 0 5px;
+                                a{
+                                    color: #999999;
+                                    position: relative;
+                                }
+                                a::after{
+                                    position: absolute;
+                                    content: "";
+                                    width: 0%;
+                                    top: 100%;
+                                    left: 0;
+                                    border-bottom: 1px solid white;
+                                    transition: width 0.5s linear;
+                                    -moz-transition: width 0.5s linear;
+                                    -ms-transition: width 0.5s linear;
+                                    -webkit-transition: width 0.5s linear;
+                                }
+                                a:hover{
+                                    color: white;
+                                }
+                                a:hover::after{
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+                >div:last-child {
+                    width: 0;
+                    height: 0;
+                }
+            }
+        }
+    } 
+    .introBox1 .imgAndContent .icTop ul li p{
+        text-align: right;
+    }
+    .introBox1 .imgAndContent .icTop ul li:nth-child(3) p{
+        margin-left: 398px;
+    }
+}
+#introduce .introBox1 .imgAndContent .icBottom > div{
+    margin: 6px 0px 0px 3px;
+}
+//咨询中心
+#consultCenter{
+    width: 1200px;
+    padding: 55px 0 120px 0;
+    margin: 0 auto;
+    .ccTitle{
+        ul{
+            text-align: center;
+            li:nth-child(1){
+                font-size: 18px;
+                line-height: 28px;
+                color: #333333;
+            }
+            li:nth-child(2){
+                font-size: 12px;
+                line-height: 22px;
+                color: #888888;
+                font-family: arial;
+            }
+            li:nth-child(3){
+                margin: 15px 0 30px 0;
+                p{
+                    width:46px;
+                    margin: 0 auto;
+                    height: 1px;
+                    border-bottom: 1px solid $red;
+                }
+            }
+        }
+    }
+    .ccBox{
+        >div{
+            width: 398px;
+            height: 503px;
+            overflow: hidden;
+            
+        }
+        >div:nth-child(1){
+            >.ccImg01{
+                width: 100%;
+                height: 250px;
+                overflow: hidden;
+                margin-bottom: 3px;
+                position: relative;
+            }
+            >.ccImg02{
+                width: 100%;
+                height: 250px;
+                overflow: hidden;
+                >div{
+                    width: 196px;
+                    height: 250px;
+                    position: relative;
+                    .ccOn{
+                        ul{
+                            width: 136px;
+                            li:nth-child(1){
+                                padding-top: 35px;
+                                word-break: break-all;
+                                text-overflow: ellipsis;
+                                 display: -webkit-box; /** 对象作为伸缩盒子模型显示 **/
+                                -webkit-box-orient: vertical; /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+                                 -webkit-line-clamp: 1; /** 显示的行数 **/
+                                 overflow: hidden;  /** 隐藏超出的内容 **/
+                            }
+                            li:nth-child(2){
+                                word-break: break-all;
+                                text-overflow: ellipsis;
+                                 display: -webkit-box; /** 对象作为伸缩盒子模型显示 **/
+                                -webkit-box-orient: vertical; /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+                                 -webkit-line-clamp: 1; /** 显示的行数 **/
+                                 overflow: hidden;  /** 隐藏超出的内容 **/
+                            }
+                            li:nth-child(5){
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                }
+                >div:nth-child(1){
+                    margin-right: 6px;
+                }
+                >div:last-child{
+                    width: 0px;
+                    height: 0px;
+                }
+            }
+        }
+        >div:nth-child(2)
+        {
+            margin: 0 3px;
+            >.ccImg03{
+                 width: 100%;
+                 height: 100%;
+                 overflow: hidden; 
+                 position: relative;
+                 .ccOn ul li:nth-child(4) p{
+                    -webkit-line-clamp: 3;
+                 }   
+                 .ccOn ul li:nth-child(1){
+                    padding-top: 135px;
+                 }
+            }
+        }
+        >div:nth-child(3)
+        {
+            >.ccImg04{
+                width: 100%;
+                height: 250px;
+                margin-bottom: 3px;
+                overflow: hidden;
+                position: relative;
+            }
+            >.ccImg04:nth-child(2){
+                margin: 0;
+            }
+        }
+        >div:last-child{
+            width: 0;
+            height: 0;
+        }
+        .ccOn{
+            display: none;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.8);
+            ul {
+                width: 286px;
+                margin: 0 auto;
+                li:nth-child(1) {
+                    font-size: 16px;
+                    color: white;
+                    line-height: 28px;
+                    padding-top: 46px;
+                }
+                li:nth-child(2) {
+                    font-size: 12px;
+                    color: #888888;
+                    font-family: "arial narrow";
+                    line-height: 22px;
+                }
+                li:nth-child(3) {
+                    p {
+                        width: 60px;
+                        height: 1px;
+                        border-bottom: 1px solid $red;
+                        margin: 15px 0;
+                    }
+                }
+                li:nth-child(4) {
+                    font-size: 12px;
+                    color: #999999;
+                    font-family: arial;
+                    line-height: 30px;
+                    p{
+                        word-break: break-all;
+                        text-overflow: ellipsis;
+                         display: -webkit-box; /** 对象作为伸缩盒子模型显示 **/
+                        -webkit-box-orient: vertical; /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+                         -webkit-line-clamp: 1; /** 显示的行数 **/
+                         overflow: hidden;  /** 隐藏超出的内容 **/
+                    }
+                    
+                }
+                li:nth-child(5){
+                    margin-top: 24px;
+                    a{
+                        display: block;
+                        width: 32px;
+                        height: 32px;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
