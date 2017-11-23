@@ -278,6 +278,7 @@ header{
                                     position: absolute;
                                     content: "";
                                     width: 0%;
+                                    height: 1px;
                                     top: 100%;
                                     left: 0;
                                     border-bottom: 1px solid white;
@@ -347,8 +348,7 @@ header{
         >div{
             width: 398px;
             height: 503px;
-            overflow: hidden;
-            
+            overflow: hidden;    
         }
         >div:nth-child(1){
             >.ccImg01{
