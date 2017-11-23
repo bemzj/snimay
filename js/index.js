@@ -10,7 +10,7 @@ $(function(){
 		    
 		},
 		effect : 'fade',
-//		autoplay:5000,
+		autoplay:5000,
 		onInit: function(swiper){
 			//添加分页标签
 			for(i=0;i<$('.swiper-pagination span').length;i++)
