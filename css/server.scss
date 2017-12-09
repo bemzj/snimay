@@ -83,17 +83,29 @@ $black:#333333;
             color: #888888;
             padding: 45px 0 25px;
         }
+        .radioChoices{
+            width: 600px;
+            height: 60px;
+            position: relative;
+            margin: 0 auto;
+            
+        }
         //单选
         .radioBox{
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 600px;
             height: 60px;
             overflow: hidden;
-            border: 1px solid #c8c8c8;
-            margin: 0 auto;
+            border: 1px solid #c8c8c8;           
             -moz-transition: height 0.5s;
             -webkit-transition: height 0.5s;
             -ms-transition: height 0.5s;
             transition: height 0.5s;
+            z-index: 5;
+            margin-left: -1px;
+            background-color: white;
             .pLeft{
                 width: 80px;
                 p{
@@ -108,11 +120,16 @@ $black:#333333;
                 
             }
             .rMiddle{
-                width: 460px;
+                width: 476px;
                 padding-bottom: 12px;
-                ul li{
-                    float: left;
+                .layui-input-block
+                {
+                    margin-left: 0;
+                }
+                .layui-form-radio {
                     width: 92px;
+                    margin: 18px 0 0 0;
+                    padding-right: 0;
                 }
             }
             .rRight{
@@ -126,62 +143,617 @@ $black:#333333;
                 }
             }
         }
+        .twoInput{
+            width: 602px;
+            margin: 0 auto;
+            margin-top: 10px;
+            >div:nth-child(1){
+                margin-right: 10px;
+            }
+            .twoInputIn{
+                width: 295px;
+                height: 60px;
+                border: 1px solid #c8c8c8;
+                position: relative;               
+                p{
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 90px;
+                    margin-left: 19px;
+                    line-height: 60px;
+                    color: #888888;
+                    span{
+                        color: $red;
+                    }
+                }
+                input{
+                    width: 180px;
+                    height: 58px;
+                    border: 0;
+                    margin-left: 95px;
+                    line-height: 58px;
+                    color: $black;
+                }
+            }
+        }
+        .oneInput{
+            width: 600px;
+            height: 60px;            
+            overflow: hidden;
+            border: 1px solid #c8c8c8;
+            margin: 0 auto;
+            margin-top: 10px;
+            position: relative;
+            p{
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 90px;
+                margin-left: 19px;
+                line-height: 60px;
+                color: #888888;
+                span {
+                    color: $red;
+                }
+            }
+            input {
+                width: 460px;
+                height: 58px;
+                border: 0;
+                margin-left: 95px;
+                margin-top: 1px;
+                line-height: 58px;
+                color: $black;
+            }
+        }
+        .textarea{
+            width: 600px;
+            height: 180px;            
+            overflow: hidden;
+            border: 1px solid #c8c8c8;
+            margin: 0 auto;
+            margin-top: 10px;
+            position: relative;
+            p{
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 90px;
+                margin-left: 19px;
+                line-height: 58px;
+                color: #888888;
+                span {
+                    color: $red;
+                }
+            }
+            textarea {
+                width: 467px;
+                height:140px;
+                border: 0;
+                margin-left: 95px;
+                margin-top: 17px;
+                line-height: 24px;
+                color: $black;
+            }
+        }  
+        .btnBox{
+            width: 600px;
+            margin: 0 auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        } 
+        .file{
+            width: 600px;
+            height: 60px;            
+            overflow: hidden;
+            border: 1px solid #c8c8c8;
+            margin: 0 auto;
+            margin-top: 10px;
+            position: relative;
+            p{
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 90px;
+                margin-left: 19px;
+                line-height: 58px;
+                color: #888888;
+                span {
+                    color: $red;
+                }
+            }
+            input{
+                position: absolute;
+                width: 460px;
+                height: 58px;
+                border: 0;
+                top: 0;
+                left: 95px;
+                line-height: 60px;
+                color: $black;
+                opacity: 0;
+            }
+            button{
+                width: 100px;
+                height: 38px;
+                position: absolute;
+                left: 95px;
+                top:11px;
+                background-color: #eeeeee;
+                border: 1px solid #c8c8c8;
+                color: #888888;
+            }
+            >span{
+                position: absolute;
+                top:0;
+                left: 205px;
+                line-height: 60px;
+                color: #888888;
+            }
+        }
     }
     .sBRight{
         width: 500px;
     }
     
 }
-.choiceR .radio {
-    position: relative;
-    display: inline-block;
-    font-weight: 400;
-    color: #888888;
-    padding-left: 24px;
-    padding-top: 12px;
-    cursor: pointer;
-    line-height: 36px;
-    width:68px;
+#contact{
+    width: 100%;
+    background-color: white;
+    .contact{
+        width: 1200px;
+        margin: 0 auto;
+        
+        .methods{
+            >.floatl{
+                width: 380px;
+                height: 380px;
+                margin-right: 30px;
+                overflow: hidden;
+                background-color: #eeeeee;
+            }
+            >.floatl:nth-child(3){
+                margin-right: 0px;
+            }
+            .ercode{
+                .code{
+                    display: block;
+                    width: 150px;
+                    height: 150px;
+                    overflow: hidden;
+                    margin: 0 auto;
+                    margin-top: 75px;
+                }
+                p{
+                    margin-top: 30px;
+                    text-align: center;
+                    color: $black;
+                    font-size: 18px;
+                    position: relative;
+                }
+                span{
+                    display: inline-block;
+                    width: 60px;
+                    height: 1px;
+                    border-bottom: 1.1px solid $red;
+                    margin-left: 146px;
+                    margin-top: 20px;
+                }
+            }
+            .apBox{
+                background-color: rgba(0,0,0,0.75);
+                ul{
+                    width: 225px;
+                    margin: 0 auto;
+                }
+                .pbBox,.abBox{
+                    margin-top: 99px;
+                }
+                .pT{
+                    font-size: 18px;
+                    color: white;
+                    margin-top: 30px;
+                }
+                span{
+                    display: inline-block;
+                    width: 60px;
+                    height: 1px;
+                    border-bottom: 1.1px solid $red;
+                    margin-top: 20px;
+                    margin-bottom: 13px;
+                }
+                .sT{
+                    font-size: 14px;
+                    color: #eeeeee;
+                    line-height: 30px;
+                }
+            }
+            .aBox{
+                background-color: #eeeeee;
+                .pT{
+                    color: $black;
+                }
+                .sT{
+                    color: #666666;
+                }
+                button{
+                    color: #666666;
+                    font-size: 14px;
+                    width: 90px;
+                    height: 30px;
+                    border: 1px solid #c8c8c8;
+                    margin-top: 10px;
+                }
+            }
+        }
+        .company{
+            padding: 80px 0;
+            .map{
+                width: 750px;
+                height: 450px;
+                #companyMap{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .message{
+                width: 450px;
+                height: 450px;
+                ul{
+                    margin-left: 71px;
+                }
+                p{
+                    text-indent: 20px;
+                    font-size: 14px;
+                    color: $black;
+                    line-height: 40px;
+                    a{
+                        display: inline;
+                    }
+                    a:hover{
+                        color: $red;
+                    }
+                }
+                .mt{
+                    font-size: 18px;
+                    color: $black;
+                    font-weight: bold;
+                    margin-top: 50px;
+                    text-indent: 0;
+                    line-height: 18px;
+                }
+                .st{
+                    color: #888888;
+                    font-family: arial;
+                    font-size: 12px;
+                    line-height: 30px;
+                }
+                .redLine{
+                    width: 60px;
+                    border-bottom: 1.1px solid $red;
+                    margin-top: 10px;
+                    margin-bottom: 5px;
+                }
+                .huiLine{
+                    width: 304px;
+                    border-bottom: 1.1px solid #c8c8c8;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+                .p1{
+                    background: url(../img/p1.png) no-repeat 2px 13px;
+                }
+                .p2{
+                    background: url(../img/p2.png) no-repeat 2px 14px;
+                }
+                .p3{
+                    background: url(../img/p3.png) no-repeat 2px 14px;
+                }
+                .p4{
+                    background: url(../img/p4.png) no-repeat 2px 14px;
+                }
+                .p5{
+                    background: url(../img/p5.png) no-repeat 2px 12px;
+                }
+                .p6{
+                    background: url(../img/p6.png) no-repeat 2px 14px;
+                }
+                .p7{
+                    background: url(../img/p6.png) no-repeat 2px 14px;
+                }
+            }
+        }
+        
+    }
 }
-
-.choiceR .radio input {
-    position: absolute;
-    left: -9999px;
+//四人转
+#fourPart{
+    width: 100%;
+    background-color: white;
+    .net{
+        width: 1200px;
+        margin: 0 auto;
+        overflow: hidden;
+        .netNavs{
+            padding-top: 60px;
+            ul li{
+                float: left;
+                margin-right: 13px;
+                button{
+                    width: 290px;
+                    height: 58px;
+                    border: 1px solid #eeeeee;
+                    font-size: 18px;
+                    color: #888888;
+                    position: relative;
+                    -moz-transition: color 0.2s,border 0.2s;
+                    -webkit-transition: color 0.2s,border 0.2s;
+                    -ms-transition: color 0.2s,border 0.2s;
+                    transition: color 0.2s,border 0.2s;
+                }
+                button::after{
+                    content: "";
+                    position: absolute;
+                    top: -1px;
+                    left: -2px;
+                    width: 0px;
+                    border-bottom: 1.1px solid $red;
+                    -moz-transition: width 0.2s;
+                    -webkit-transition: width 0.2s;
+                    -ms-transition: width 0.2s;
+                    transition: width 0.2s;
+                }
+                .btnActive{
+                    border: 1px solid white;
+                    box-shadow: 0 0 2px 2px rgba(231,231,231,0.4);
+                    color: $red;
+                }
+                button:hover{
+                    border: 1px solid white;
+                    box-shadow: 0 0 2px 2px rgba(231,231,231,0.4);
+                    color: $red;
+                }
+                .btnActive::after{
+                    width: 292px;
+                }
+                button:hover::after{
+                    width: 292px;
+                }
+            }
+            ul li:last-child{
+                margin-right: 0px;
+            }
+        }
+        .moreChoice {
+            .short {
+                width: 378px;
+                height: 60px;
+                border: 1px solid #c8c8c8;
+                position: relative;
+                margin-right: 10px;
+                cursor: pointer;
+                cursor: -ms-pointer;
+                >img {
+                    position: absolute;
+                    top: 27px;
+                    right: 25px;
+                    transition: transform 0.5s;
+                    -ms-transition: transform 0.5s;
+                    -webkit-transition: transform 0.5s;
+                    -moz-transition: transform 0.5s;
+                }
+                >p {
+                    font-size: 16px;
+                    color: $black;
+                    line-height: 60px;
+                    text-indent: 30px;
+                }
+                .profess {
+                    overflow: hidden;
+                    position: absolute;
+                    top: 100%;
+                    left: -1px;
+                    display: none;
+                    background-color: white;
+                    z-index: 100;
+                }
+                ul {
+                    width: 378px;
+                    border: 1px solid #c8c8c8;
+                    background-color: white;
+                    padding: 10px 0;
+                    transition: height 0.5;
+                }
+                ul li {
+                    p {
+                        line-height: 35px;
+                        text-indent: 30px;
+                        font-size: 14px;
+                    }
+                    p:hover {
+                        cursor: pointer;
+                        cursor: -ms-pointer;
+                        background-color: $red;
+                        color: white;
+                    }
+                }
+            }
+            .long {
+                width: 345px;
+                height: 60px;
+                border: 1px solid #c8c8c8;
+                position: relative;
+                border-right: 0;
+                button {
+                    width: 80px;
+                    height: 60px;
+                    position: absolute;
+                    top: -1px;
+                    right: -80px;
+                    border: 1px solid $black;
+                    background: url(../img/searchStore.png) no-repeat center center;
+                    background-color: $black;
+                    color: white;
+                    
+                }
+                input {
+                    width: 300px;
+                    height: 100%;
+                    border: 0;
+                    color: $black;
+                    font-size: 16px;
+                    margin-left: 30px;
+                }
+                input::-webkit-input-placeholder {
+                    color: #888888;
+                }
+                input::-moz-placeholder {
+                    color: #888888;
+                }
+                input::-ms-input-placeholder {
+                    color: #888888;
+                }
+            }
+        }
+        .storeList{
+            padding: 40px 0 80px;
+            .more{
+                tr:hover{
+                    color: white;
+                    background-color: $red;
+                    border-color: $red;
+                }   
+                tr:nth-child(1):hover{
+                    background-color: $black;
+                    color: white;
+                    border-color: $black;
+                }
+            }
+            table{
+                width: 100%;   
+                tr:nth-child(1){
+                    background-color: $black;
+                    color: white;
+                    border-color: $black;
+                }  
+                       
+                tr{
+                    width: 100%;
+                    height: 60px;
+                    border: 1px solid #eeeeee;
+                    td{
+                        width: 33.3333333%;
+                        text-align: center;
+                        line-height: 60px;
+                    }
+                }
+            }
+            .nomore{
+                tr:nth-child(2){
+                    td{
+                        width: 100%;
+                        padding: 120px 0 160px;
+                        p{
+                            font-size: 16px;
+                            line-height: 24px;
+                            color: $black;
+                        }
+                    }
+                } 
+            }
+        }
+    }
 }
-
-.choiceR .radio i {
-    display: block;
-    position: absolute;
-    top: 21px;
-    left: 0rem;
-    width: 18px;
-    height: 18px;
-    outline: 0;
-    border: 1px solid #b8b8b8;
-    border-radius: 50%;
-    transition: border-color .3s;
-    -webkit-transition: border-color .3s;
-}
-
-.choiceR .radio input:checked+i {
-    border-color: #c42c3e;
-    border: 1px solid #c42c3e;
-}
-
-.choiceR .radio input+i:after {
-    position: absolute;
-    content: '';
-    top: 25%;
-    left: 25%;
-    width: 50%;
-    height: 50%;
-    border-radius: 50%;
-    background-color: #c42c3e;
-    opacity: 0;
-    transition: opacity .1s;
-    -webkit-transition: opacity .1s;
-}
-
-.choiceR .radio input:checked+i:after {
-    opacity: 1;
+#specialServer{
+    width: 100%;
+    background-color: white;
+    padding-bottom: 100px;
+    .stepBox{
+        width: 1200px;
+        margin: 0 auto;
+        .stepChild:hover{
+            box-shadow: 0 0 4px 4px rgba(231,231,231,0.2);
+            .stepContent{
+                background-color: white; 
+            }
+            .stepImg{
+                img{
+                    width: 105%;
+                }
+            }
+        }
+        .stepChild{
+            width: 598px;
+            height: 250px;
+            overflow: hidden;
+            margin-bottom: 4px;
+            .stepImg{
+                width: 260px;
+                height: 250px;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    -moz-transition: width 0.5s,margin 0.5s;
+                    -webkit-transition: width 0.5s,margin 0.5s;
+                    -ms-transition: width 0.5s,margin 0.5s;
+                    transition: width 0.5s,margin 0.5s;
+                }
+            }
+            .stepContent{
+                width: 338px;
+                height: 250px;
+                background-color: #F6F6F6;
+                img{
+                    display: block;
+                    margin: 0 auto;
+                }
+                .iBox1{
+                    padding-top: 79px;
+                }
+                .iBox2{
+                    padding-top: 83px;
+                }
+                .iBox3{
+                    padding-top: 70px;
+                }
+                .iBox4{
+                    padding-top: 73px;
+                }
+                .iBox5{
+                    padding-top: 75px;
+                }
+                .iBox6{
+                    padding-top: 73px;
+                }
+                p{
+                    font-size: 16px;
+                    color: #666666;
+                    text-align: center;
+                    line-height: 70px;                   
+                }
+                span{
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                    color: $red;
+                    font-size: 16px;
+                }
+            }
+        }
+        .stepActive{
+            box-shadow: 0 0 4px 4px rgba(231,231,231,0.2);
+            .stepContent{
+                background-color: white; 
+            }
+            .stepImg{
+                img{
+                    width: 105%;
+                }
+            }
+        }
+        .stepChild:nth-child(2n+1){
+            margin-right: 4px;
+        }
+    }
 }

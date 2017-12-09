@@ -67,16 +67,26 @@
       text-align: center;
       color: #888888;
       padding: 45px 0 25px; }
+    .serverBox .sBLeft .radioChoices {
+      width: 600px;
+      height: 60px;
+      position: relative;
+      margin: 0 auto; }
     .serverBox .sBLeft .radioBox {
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 600px;
       height: 60px;
       overflow: hidden;
       border: 1px solid #c8c8c8;
-      margin: 0 auto;
       -moz-transition: height 0.5s;
       -webkit-transition: height 0.5s;
       -ms-transition: height 0.5s;
-      transition: height 0.5s; }
+      transition: height 0.5s;
+      z-index: 5;
+      margin-left: -1px;
+      background-color: white; }
       .serverBox .sBLeft .radioBox .pLeft {
         width: 80px; }
         .serverBox .sBLeft .radioBox .pLeft p {
@@ -87,11 +97,14 @@
           .serverBox .sBLeft .radioBox .pLeft p span {
             color: #a51e32; }
       .serverBox .sBLeft .radioBox .rMiddle {
-        width: 460px;
+        width: 476px;
         padding-bottom: 12px; }
-        .serverBox .sBLeft .radioBox .rMiddle ul li {
-          float: left;
-          width: 92px; }
+        .serverBox .sBLeft .radioBox .rMiddle .layui-input-block {
+          margin-left: 0; }
+        .serverBox .sBLeft .radioBox .rMiddle .layui-form-radio {
+          width: 92px;
+          margin: 18px 0 0 0;
+          padding-right: 0; }
       .serverBox .sBLeft .radioBox .rRight a {
         display: block;
         padding: 25px 10px;
@@ -99,55 +112,483 @@
         -webkit-transition: transform 0.5s;
         -ms-transition: transform 0.5s;
         transition: transform 0.5s; }
+    .serverBox .sBLeft .twoInput {
+      width: 602px;
+      margin: 0 auto;
+      margin-top: 10px; }
+      .serverBox .sBLeft .twoInput > div:nth-child(1) {
+        margin-right: 10px; }
+      .serverBox .sBLeft .twoInput .twoInputIn {
+        width: 295px;
+        height: 60px;
+        border: 1px solid #c8c8c8;
+        position: relative; }
+        .serverBox .sBLeft .twoInput .twoInputIn p {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 90px;
+          margin-left: 19px;
+          line-height: 60px;
+          color: #888888; }
+          .serverBox .sBLeft .twoInput .twoInputIn p span {
+            color: #a51e32; }
+        .serverBox .sBLeft .twoInput .twoInputIn input {
+          width: 180px;
+          height: 58px;
+          border: 0;
+          margin-left: 95px;
+          line-height: 58px;
+          color: #333333; }
+    .serverBox .sBLeft .oneInput {
+      width: 600px;
+      height: 60px;
+      overflow: hidden;
+      border: 1px solid #c8c8c8;
+      margin: 0 auto;
+      margin-top: 10px;
+      position: relative; }
+      .serverBox .sBLeft .oneInput p {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 90px;
+        margin-left: 19px;
+        line-height: 60px;
+        color: #888888; }
+        .serverBox .sBLeft .oneInput p span {
+          color: #a51e32; }
+      .serverBox .sBLeft .oneInput input {
+        width: 460px;
+        height: 58px;
+        border: 0;
+        margin-left: 95px;
+        margin-top: 1px;
+        line-height: 58px;
+        color: #333333; }
+    .serverBox .sBLeft .textarea {
+      width: 600px;
+      height: 180px;
+      overflow: hidden;
+      border: 1px solid #c8c8c8;
+      margin: 0 auto;
+      margin-top: 10px;
+      position: relative; }
+      .serverBox .sBLeft .textarea p {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 90px;
+        margin-left: 19px;
+        line-height: 58px;
+        color: #888888; }
+        .serverBox .sBLeft .textarea p span {
+          color: #a51e32; }
+      .serverBox .sBLeft .textarea textarea {
+        width: 467px;
+        height: 140px;
+        border: 0;
+        margin-left: 95px;
+        margin-top: 17px;
+        line-height: 24px;
+        color: #333333; }
+    .serverBox .sBLeft .btnBox {
+      width: 600px;
+      margin: 0 auto;
+      margin-top: 10px;
+      margin-bottom: 10px; }
+    .serverBox .sBLeft .file {
+      width: 600px;
+      height: 60px;
+      overflow: hidden;
+      border: 1px solid #c8c8c8;
+      margin: 0 auto;
+      margin-top: 10px;
+      position: relative; }
+      .serverBox .sBLeft .file p {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 90px;
+        margin-left: 19px;
+        line-height: 58px;
+        color: #888888; }
+        .serverBox .sBLeft .file p span {
+          color: #a51e32; }
+      .serverBox .sBLeft .file input {
+        position: absolute;
+        width: 460px;
+        height: 58px;
+        border: 0;
+        top: 0;
+        left: 95px;
+        line-height: 60px;
+        color: #333333;
+        opacity: 0; }
+      .serverBox .sBLeft .file button {
+        width: 100px;
+        height: 38px;
+        position: absolute;
+        left: 95px;
+        top: 11px;
+        background-color: #eeeeee;
+        border: 1px solid #c8c8c8;
+        color: #888888; }
+      .serverBox .sBLeft .file > span {
+        position: absolute;
+        top: 0;
+        left: 205px;
+        line-height: 60px;
+        color: #888888; }
   .serverBox .sBRight {
     width: 500px; }
 
-.choiceR .radio {
-  position: relative;
-  display: inline-block;
-  font-weight: 400;
-  color: #888888;
-  padding-left: 24px;
-  padding-top: 12px;
-  cursor: pointer;
-  line-height: 36px;
-  width: 68px; }
+#contact {
+  width: 100%;
+  background-color: white; }
+  #contact .contact {
+    width: 1200px;
+    margin: 0 auto; }
+    #contact .contact .methods > .floatl {
+      width: 380px;
+      height: 380px;
+      margin-right: 30px;
+      overflow: hidden;
+      background-color: #eeeeee; }
+    #contact .contact .methods > .floatl:nth-child(3) {
+      margin-right: 0px; }
+    #contact .contact .methods .ercode .code {
+      display: block;
+      width: 150px;
+      height: 150px;
+      overflow: hidden;
+      margin: 0 auto;
+      margin-top: 75px; }
+    #contact .contact .methods .ercode p {
+      margin-top: 30px;
+      text-align: center;
+      color: #333333;
+      font-size: 18px;
+      position: relative; }
+    #contact .contact .methods .ercode span {
+      display: inline-block;
+      width: 60px;
+      height: 1px;
+      border-bottom: 1.1px solid #a51e32;
+      margin-left: 146px;
+      margin-top: 20px; }
+    #contact .contact .methods .apBox {
+      background-color: rgba(0, 0, 0, 0.75); }
+      #contact .contact .methods .apBox ul {
+        width: 225px;
+        margin: 0 auto; }
+      #contact .contact .methods .apBox .pbBox, #contact .contact .methods .apBox .abBox {
+        margin-top: 99px; }
+      #contact .contact .methods .apBox .pT {
+        font-size: 18px;
+        color: white;
+        margin-top: 30px; }
+      #contact .contact .methods .apBox span {
+        display: inline-block;
+        width: 60px;
+        height: 1px;
+        border-bottom: 1.1px solid #a51e32;
+        margin-top: 20px;
+        margin-bottom: 13px; }
+      #contact .contact .methods .apBox .sT {
+        font-size: 14px;
+        color: #eeeeee;
+        line-height: 30px; }
+    #contact .contact .methods .aBox {
+      background-color: #eeeeee; }
+      #contact .contact .methods .aBox .pT {
+        color: #333333; }
+      #contact .contact .methods .aBox .sT {
+        color: #666666; }
+      #contact .contact .methods .aBox button {
+        color: #666666;
+        font-size: 14px;
+        width: 90px;
+        height: 30px;
+        border: 1px solid #c8c8c8;
+        margin-top: 10px; }
+    #contact .contact .company {
+      padding: 80px 0; }
+      #contact .contact .company .map {
+        width: 750px;
+        height: 450px; }
+        #contact .contact .company .map #companyMap {
+          width: 100%;
+          height: 100%; }
+      #contact .contact .company .message {
+        width: 450px;
+        height: 450px; }
+        #contact .contact .company .message ul {
+          margin-left: 71px; }
+        #contact .contact .company .message p {
+          text-indent: 20px;
+          font-size: 14px;
+          color: #333333;
+          line-height: 40px; }
+          #contact .contact .company .message p a {
+            display: inline; }
+          #contact .contact .company .message p a:hover {
+            color: #a51e32; }
+        #contact .contact .company .message .mt {
+          font-size: 18px;
+          color: #333333;
+          font-weight: bold;
+          margin-top: 50px;
+          text-indent: 0;
+          line-height: 18px; }
+        #contact .contact .company .message .st {
+          color: #888888;
+          font-family: arial;
+          font-size: 12px;
+          line-height: 30px; }
+        #contact .contact .company .message .redLine {
+          width: 60px;
+          border-bottom: 1.1px solid #a51e32;
+          margin-top: 10px;
+          margin-bottom: 5px; }
+        #contact .contact .company .message .huiLine {
+          width: 304px;
+          border-bottom: 1.1px solid #c8c8c8;
+          margin-top: 10px;
+          margin-bottom: 10px; }
+        #contact .contact .company .message .p1 {
+          background: url(../img/p1.png) no-repeat 2px 13px; }
+        #contact .contact .company .message .p2 {
+          background: url(../img/p2.png) no-repeat 2px 14px; }
+        #contact .contact .company .message .p3 {
+          background: url(../img/p3.png) no-repeat 2px 14px; }
+        #contact .contact .company .message .p4 {
+          background: url(../img/p4.png) no-repeat 2px 14px; }
+        #contact .contact .company .message .p5 {
+          background: url(../img/p5.png) no-repeat 2px 12px; }
+        #contact .contact .company .message .p6 {
+          background: url(../img/p6.png) no-repeat 2px 14px; }
+        #contact .contact .company .message .p7 {
+          background: url(../img/p6.png) no-repeat 2px 14px; }
 
-.choiceR .radio input {
-  position: absolute;
-  left: -9999px; }
+#fourPart {
+  width: 100%;
+  background-color: white; }
+  #fourPart .net {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden; }
+    #fourPart .net .netNavs {
+      padding-top: 60px; }
+      #fourPart .net .netNavs ul li {
+        float: left;
+        margin-right: 13px; }
+        #fourPart .net .netNavs ul li button {
+          width: 290px;
+          height: 58px;
+          border: 1px solid #eeeeee;
+          font-size: 18px;
+          color: #888888;
+          position: relative;
+          -moz-transition: color 0.2s,border 0.2s;
+          -webkit-transition: color 0.2s,border 0.2s;
+          -ms-transition: color 0.2s,border 0.2s;
+          transition: color 0.2s,border 0.2s; }
+        #fourPart .net .netNavs ul li button::after {
+          content: "";
+          position: absolute;
+          top: -1px;
+          left: -2px;
+          width: 0px;
+          border-bottom: 1.1px solid #a51e32;
+          -moz-transition: width 0.2s;
+          -webkit-transition: width 0.2s;
+          -ms-transition: width 0.2s;
+          transition: width 0.2s; }
+        #fourPart .net .netNavs ul li .btnActive {
+          border: 1px solid white;
+          box-shadow: 0 0 2px 2px rgba(231, 231, 231, 0.4);
+          color: #a51e32; }
+        #fourPart .net .netNavs ul li button:hover {
+          border: 1px solid white;
+          box-shadow: 0 0 2px 2px rgba(231, 231, 231, 0.4);
+          color: #a51e32; }
+        #fourPart .net .netNavs ul li .btnActive::after {
+          width: 292px; }
+        #fourPart .net .netNavs ul li button:hover::after {
+          width: 292px; }
+      #fourPart .net .netNavs ul li:last-child {
+        margin-right: 0px; }
+    #fourPart .net .moreChoice .short {
+      width: 378px;
+      height: 60px;
+      border: 1px solid #c8c8c8;
+      position: relative;
+      margin-right: 10px;
+      cursor: pointer;
+      cursor: -ms-pointer; }
+      #fourPart .net .moreChoice .short > img {
+        position: absolute;
+        top: 27px;
+        right: 25px;
+        transition: transform 0.5s;
+        -ms-transition: transform 0.5s;
+        -webkit-transition: transform 0.5s;
+        -moz-transition: transform 0.5s; }
+      #fourPart .net .moreChoice .short > p {
+        font-size: 16px;
+        color: #333333;
+        line-height: 60px;
+        text-indent: 30px; }
+      #fourPart .net .moreChoice .short .profess {
+        overflow: hidden;
+        position: absolute;
+        top: 100%;
+        left: -1px;
+        display: none;
+        background-color: white;
+        z-index: 100; }
+      #fourPart .net .moreChoice .short ul {
+        width: 378px;
+        border: 1px solid #c8c8c8;
+        background-color: white;
+        padding: 10px 0;
+        transition: height 0.5; }
+      #fourPart .net .moreChoice .short ul li p {
+        line-height: 35px;
+        text-indent: 30px;
+        font-size: 14px; }
+      #fourPart .net .moreChoice .short ul li p:hover {
+        cursor: pointer;
+        cursor: -ms-pointer;
+        background-color: #a51e32;
+        color: white; }
+    #fourPart .net .moreChoice .long {
+      width: 345px;
+      height: 60px;
+      border: 1px solid #c8c8c8;
+      position: relative;
+      border-right: 0; }
+      #fourPart .net .moreChoice .long button {
+        width: 80px;
+        height: 60px;
+        position: absolute;
+        top: -1px;
+        right: -80px;
+        border: 1px solid #333333;
+        background: url(../img/searchStore.png) no-repeat center center;
+        background-color: #333333;
+        color: white; }
+      #fourPart .net .moreChoice .long input {
+        width: 300px;
+        height: 100%;
+        border: 0;
+        color: #333333;
+        font-size: 16px;
+        margin-left: 30px; }
+      #fourPart .net .moreChoice .long input::-webkit-input-placeholder {
+        color: #888888; }
+      #fourPart .net .moreChoice .long input::-moz-placeholder {
+        color: #888888; }
+      #fourPart .net .moreChoice .long input::-ms-input-placeholder {
+        color: #888888; }
+    #fourPart .net .storeList {
+      padding: 40px 0 80px; }
+      #fourPart .net .storeList .more tr:hover {
+        color: white;
+        background-color: #a51e32;
+        border-color: #a51e32; }
+      #fourPart .net .storeList .more tr:nth-child(1):hover {
+        background-color: #333333;
+        color: white;
+        border-color: #333333; }
+      #fourPart .net .storeList table {
+        width: 100%; }
+        #fourPart .net .storeList table tr:nth-child(1) {
+          background-color: #333333;
+          color: white;
+          border-color: #333333; }
+        #fourPart .net .storeList table tr {
+          width: 100%;
+          height: 60px;
+          border: 1px solid #eeeeee; }
+          #fourPart .net .storeList table tr td {
+            width: 33.3333333%;
+            text-align: center;
+            line-height: 60px; }
+      #fourPart .net .storeList .nomore tr:nth-child(2) td {
+        width: 100%;
+        padding: 120px 0 160px; }
+        #fourPart .net .storeList .nomore tr:nth-child(2) td p {
+          font-size: 16px;
+          line-height: 24px;
+          color: #333333; }
 
-.choiceR .radio i {
-  display: block;
-  position: absolute;
-  top: 21px;
-  left: 0rem;
-  width: 18px;
-  height: 18px;
-  outline: 0;
-  border: 1px solid #b8b8b8;
-  border-radius: 50%;
-  transition: border-color .3s;
-  -webkit-transition: border-color .3s; }
-
-.choiceR .radio input:checked + i {
-  border-color: #c42c3e;
-  border: 1px solid #c42c3e; }
-
-.choiceR .radio input + i:after {
-  position: absolute;
-  content: '';
-  top: 25%;
-  left: 25%;
-  width: 50%;
-  height: 50%;
-  border-radius: 50%;
-  background-color: #c42c3e;
-  opacity: 0;
-  transition: opacity .1s;
-  -webkit-transition: opacity .1s; }
-
-.choiceR .radio input:checked + i:after {
-  opacity: 1; }
+#specialServer {
+  width: 100%;
+  background-color: white;
+  padding-bottom: 100px; }
+  #specialServer .stepBox {
+    width: 1200px;
+    margin: 0 auto; }
+    #specialServer .stepBox .stepChild:hover {
+      box-shadow: 0 0 4px 4px rgba(231, 231, 231, 0.2); }
+      #specialServer .stepBox .stepChild:hover .stepContent {
+        background-color: white; }
+      #specialServer .stepBox .stepChild:hover .stepImg img {
+        width: 105%; }
+    #specialServer .stepBox .stepChild {
+      width: 598px;
+      height: 250px;
+      overflow: hidden;
+      margin-bottom: 4px; }
+      #specialServer .stepBox .stepChild .stepImg {
+        width: 260px;
+        height: 250px;
+        overflow: hidden; }
+        #specialServer .stepBox .stepChild .stepImg img {
+          width: 100%;
+          -moz-transition: width 0.5s,margin 0.5s;
+          -webkit-transition: width 0.5s,margin 0.5s;
+          -ms-transition: width 0.5s,margin 0.5s;
+          transition: width 0.5s,margin 0.5s; }
+      #specialServer .stepBox .stepChild .stepContent {
+        width: 338px;
+        height: 250px;
+        background-color: #F6F6F6; }
+        #specialServer .stepBox .stepChild .stepContent img {
+          display: block;
+          margin: 0 auto; }
+        #specialServer .stepBox .stepChild .stepContent .iBox1 {
+          padding-top: 79px; }
+        #specialServer .stepBox .stepChild .stepContent .iBox2 {
+          padding-top: 83px; }
+        #specialServer .stepBox .stepChild .stepContent .iBox3 {
+          padding-top: 70px; }
+        #specialServer .stepBox .stepChild .stepContent .iBox4 {
+          padding-top: 73px; }
+        #specialServer .stepBox .stepChild .stepContent .iBox5 {
+          padding-top: 75px; }
+        #specialServer .stepBox .stepChild .stepContent .iBox6 {
+          padding-top: 73px; }
+        #specialServer .stepBox .stepChild .stepContent p {
+          font-size: 16px;
+          color: #666666;
+          text-align: center;
+          line-height: 70px; }
+        #specialServer .stepBox .stepChild .stepContent span {
+          display: block;
+          width: 100%;
+          text-align: center;
+          color: #a51e32;
+          font-size: 16px; }
+    #specialServer .stepBox .stepActive {
+      box-shadow: 0 0 4px 4px rgba(231, 231, 231, 0.2); }
+      #specialServer .stepBox .stepActive .stepContent {
+        background-color: white; }
+      #specialServer .stepBox .stepActive .stepImg img {
+        width: 105%; }
+    #specialServer .stepBox .stepChild:nth-child(2n+1) {
+      margin-right: 4px; }
 
 /*# sourceMappingURL=server.css.map */
