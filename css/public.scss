@@ -200,9 +200,13 @@ footer{
                         font-weight: bold;
                     }
                     a {
+                        position: relative;
                         color: #999999;
                         line-height: 30px;
-                        transition: font-size 0.5s;
+                        transition: font-size 0.5s,;
+                        -ms-transition: font-size 0.5s,;
+                        -webkit-transition: font-size 0.5s,;
+                        -moz-transition: font-size 0.5s,;
                     }
                     a:hover {
                         color: $red;
@@ -273,10 +277,7 @@ footer{
                         width: 260px;
                     }
                     .wtBox{
-                        transition:transform 0.3s linear,width 0.3s linear,height 0.3s linear,top 0.3s linear,left 0.3s linear;
-                        -moz-transition:  -moz-transform 0.3s linear,width 0.3s linear,height 0.3s linear,top 0.3s linear,left 0.3s linear;
-                        -webkit-transition: -webkit-transform 0.3s linear,width 0.3s linear,height 0.3s linear,top 0.3s linear,left 0.3s linear;      
-                        -ms-transition: transform 0.3s linear,width 0.3s linear,height 0.3s linear,top 0.3s linear,left 0.3s linear; 
+                        display: none;
                         overflow: hidden;
                         >img{
                             display: block;
@@ -287,14 +288,10 @@ footer{
                             overflow: hidden;
                         }
                         position: absolute;
-//                      top: -180px;
-//                      left: -115px;
-//                      width: 265px;
-//                      height: 168px;
-                        top: -96px;//-180px
-                        left: 15px;//-115px
-                        width: 0px; //265px
-                        height: 0px;//168px
+                        top: -180px;
+                        left: -115px;
+                        width: 265px;
+                        height: 168px;
                         padding: 2px;
                         background-color: white;
                         box-shadow: 0 0.5px 0.5px rgba(51,51,51,0.2);
