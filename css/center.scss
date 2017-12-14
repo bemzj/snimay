@@ -64,11 +64,37 @@ header{
             width: 380px;
             margin: 0 auto;
             margin-bottom: 10px;
-            >img{
+            overflow: hidden;
+            >div{
                 position: absolute;
                 left: 12px;
                 top: 23px;
-                width:  auto;
+                width:  12px;
+                height: 12px;  
+                overflow: hidden;             
+                img{
+                    width: auto;
+                    margin-left: -212px;
+                }
+            }
+            .phone{
+                width:  15px;
+                height: 15px;  
+                img{
+                    margin-left: -212px;
+                    margin-top: -48px;
+                }
+            }
+            .cityes{
+                width:  13px;
+                height: 13px;  
+                img{
+                    margin-top: -95px;
+                    margin-left: -210px;
+                }
+            }
+            .word{
+                margin-left: 0px;
             }
             input{
                 width: 378px;
@@ -296,15 +322,17 @@ header{
                        width: 100%;
                    }
                    .best{
-                      position: absolute;
-                      top: -3px; 
-                      left: -5px;
-                      padding: 5px 10px 10px;
-                      background: url(../img/best.png) no-repeat center center;
-                      background-size:100%;
+                            position: absolute;
+                            top: -1px;
+                            left: -5px;
+                            padding: 5px 10px 10px;
+                            background: url(../img/centers.png) no-repeat;
+                            background-position: -160px,-160px;                     
                       p{
                           color: white;
                           font-size: 12px;
+                          line-height: 16px;
+                          padding-bottom: 3px;
                       }
                    }
                }

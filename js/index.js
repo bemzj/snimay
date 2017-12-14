@@ -33,20 +33,20 @@ $(function(){
 	       }
 	    }
 	});  
-//	//业务中心
-//	$('.moreFun').mouseover(function(){
-//		$(this).find('a').stop().animate({'top':'0%'},100);
-//		$(this).find('.imgPop').stop().animate({'top':'0%'},100);
-//	});
-//	$('.moreFun').mouseout(function(){
-//		$(this).find('a').stop().animate({'top':'100%'},100);
-//		$(this).find('.imgPop').stop().animate({'top':'100%'},100);
-//	});
-//	//咨询中心
-//	$('.ccImg').mouseover(function(){
-//		$(this).find('.ccOn').stop().slideDown(100);
-//	});
-//	$('.ccImg').mouseout(function(){
-//		$(this).find('.ccOn').stop().slideUp(100);
-//	});
+	//业务中心
+	$('.moreFun').mouseover(function(){
+		$(this).find('a').stop().animate({'top':'0%'},100);
+		$(this).find('.imgPop').stop().animate({'top':'0%'},100);
+	});
+	$('.moreFun').mouseout(function(){
+		$(this).find('a').stop().animate({'top':'100%'},100);
+		$(this).find('.imgPop').stop().animate({'top':'100%'},100);
+	});
+	//咨询中心
+	$('.ccImg').mouseover(function(){
+		$(this).find('.ccOn').stop().slideDown(100);
+	});
+	$('.ccImg').mouseout(function(){
+		$(this).find('.ccOn').stop().slideUp(100);
+	});
 });

@@ -2,13 +2,11 @@ $(function(){
 	//微信特效
 	$('.wechat').mousemove(function(){
 		$(this).find('.wtBox').show();
-		$(this).find('.wtBox').removeClass('animated flipOutX');
 		$(this).find('.wtBox').addClass('animated flipInX')
 	});
 	$('.wechat').mouseout(function(){
-//		$(this).find('.wtBox').hide();
+		$(this).find('.wtBox').hide();
 		$(this).find('.wtBox').removeClass('animated flipInX');
-		$(this).find('.wtBox').addClass('animated flipOutX');
 	});
 	//出现回到顶部按钮
 	$(window).scroll(function(){
